@@ -9,12 +9,15 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:orientation="vertical">
+        android:orientation="vertical"
+        android:layout_margin="8dp">
 
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Rock Paper Scissors"/>
+            android:gravity="center_horizontal"
+            android:text="Rock Paper Scissors"
+            android:layout_margin="30dp"/>
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -31,7 +34,27 @@
                      android:id="@+id/PlayerA"
                      android:layout_width="match_parent"
                      android:layout_height="wrap_content"
+                     android:gravity="center_horizontal"
                      android:text="Player A"/>
+
+                 <TextView
+                     android:id="@+id/score_a"
+                     android:layout_width="match_parent"
+                     android:layout_height="wrap_content"
+                     android:layout_marginBottom="8dp"
+                     android:gravity="center_horizontal"
+                     android:text="0"
+                     android:textColor="#123456"
+                     android:textSize="24sp" />
+
+                 <Button
+                     android:id="@+id/SlytherinScoreButton"
+                     android:layout_width="100dp"
+                     android:layout_height="wrap_content"
+                     android:padding="8dp"
+                     android:text="+1"
+                     android:textSize="24sp" />
+
              </LinearLayout>
 
             <LinearLayout
@@ -44,11 +67,39 @@
                     android:id="@+id/PlayerB"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
+                    android:gravity="center_horizontal"
                     android:text="Player B"/>
+
+                <TextView
+                    android:id="@+id/score_b"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="8dp"
+                    android:gravity="center_horizontal"
+                    android:text="0"
+                    android:textColor="#123456"
+                    android:textSize="24sp" />
+
+                <Button
+                    android:id="@+id/SlytherinScoreButton"
+                    android:layout_width="100dp"
+                    android:layout_height="wrap_content"
+                    android:padding="8dp"
+                    android:text="+1"
+                    android:textSize="24sp" />
 
             </LinearLayout>
 
+
         </LinearLayout>
+
+        <Button
+            android:id="@+id/SlytherinScoreButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="8dp"
+            android:text="reset game"
+            android:textSize="24sp"/>
 
     </LinearLayout>
 
