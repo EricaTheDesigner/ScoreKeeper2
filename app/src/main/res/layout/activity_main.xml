@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="#efefef"
     tools:context=".MainActivity">
 
     <LinearLayout
@@ -12,6 +13,12 @@
         android:orientation="vertical"
         android:layout_margin="8dp">
 
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:src="@drawable/RPS2"
+            android:layout_gravity="center_horizontal"/>
+
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
@@ -19,10 +26,12 @@
             android:text="Rock Paper Scissors"
             android:layout_margin="30dp"/>
 
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="horizontal">
+
 
              <LinearLayout
                  android:layout_width="wrap_content"
@@ -48,9 +57,10 @@
                      android:textSize="24sp" />
 
                  <Button
-                     android:id="@+id/SlytherinScoreButton"
-                     android:layout_width="100dp"
+                     android:id="@+id/PlayerA_button"
+                     android:layout_width="match_parent"
                      android:layout_height="wrap_content"
+                     android:gravity="center_horizontal"
                      android:padding="8dp"
                      android:text="+1"
                      android:textSize="24sp" />
@@ -81,8 +91,8 @@
                     android:textSize="24sp" />
 
                 <Button
-                    android:id="@+id/SlytherinScoreButton"
-                    android:layout_width="100dp"
+                    android:id="@+id/PlayerB_button"
+                    android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:padding="8dp"
                     android:text="+1"
@@ -94,12 +104,13 @@
         </LinearLayout>
 
         <Button
-            android:id="@+id/SlytherinScoreButton"
+            android:id="@+id/Reset_button"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:padding="8dp"
             android:text="reset game"
-            android:textSize="24sp"/>
+            android:textSize="18sp"
+            android:layout_gravity="bottom"/>
 
     </LinearLayout>
 
