@@ -8,6 +8,32 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-
-
+<!--style of the title-->
+    <style name="TitleStyle" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#fd5c63</item>
+        <item name="android:textSize">60sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginBottom">26dp</item>
+    </style>
+<!--style of the team-->
+    <style name="PlayerStyle" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#000000</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:gravity">center</item>
+    </style>
+    <!--style of the Score-->
+    <style name="ScoreStyle" parent="@android:style/TextAppearance">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#FFAEAEAE</item>
+        <item name="android:textSize">64sp</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:gravity">center</item>
+    </style>
 </resources>
