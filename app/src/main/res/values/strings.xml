@@ -1,3 +1,7 @@
 <resources>
     <string name="app_name">Score Keeper 2</string>
+    <string name="title">rock. paper. scissors</string>
+    <string name="startingScore">0</string>
+    <string name="AddAPointButton">+1</string>
+    <string name="reset_game">reset game</string>
 </resources>

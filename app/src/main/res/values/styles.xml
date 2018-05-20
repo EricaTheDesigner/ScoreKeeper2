@@ -8,32 +8,70 @@
         <item name="colorAccent">@color/colorAccent</item>
     </style>
 
-<!--style of the title-->
-    <style name="TitleStyle" parent="@android:style/TextAppearance">
+<!--match parent width wrap content height-->
+    <style name="matchW_wrapH">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+<!--wrap content for width and height-->
+    <style name="wrap_content">
         <item name="android:layout_width">wrap_content</item>
         <item name="android:layout_height">wrap_content</item>
+    </style>
+
+<!--style of the title-->
+    <style name="TitleStyle" parent="matchW_wrapH">
         <item name="android:textColor">#fd5c63</item>
         <item name="android:textSize">60sp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_marginBottom">26dp</item>
+        <item name="android:fontFamily">@font/just_another_hand</item>
     </style>
+
 <!--style of the team-->
-    <style name="PlayerStyle" parent="@android:style/TextAppearance">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="PlayerStyle" parent="matchW_wrapH">
         <item name="android:textColor">#000000</item>
         <item name="android:textSize">24sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:gravity">center</item>
     </style>
+
     <!--style of the Score-->
-    <style name="ScoreStyle" parent="@android:style/TextAppearance">
-        <item name="android:layout_width">wrap_content</item>
-        <item name="android:layout_height">wrap_content</item>
+    <style name="ScoreStyle" parent="matchW_wrapH">
         <item name="android:textColor">#FFAEAEAE</item>
         <item name="android:textSize">64sp</item>
         <item name="android:textStyle">bold</item>
         <item name="android:layout_marginTop">16dp</item>
         <item name="android:gravity">center</item>
+        <item name="android:fontFamily">@font/just_another_hand</item>
+    </style>
+
+ <!--add a point button-->
+    <style name="addOneStyle" parent="Widget.AppCompat.Button.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:padding">8dp</item>
+    </style>
+
+<!--Tie button-->
+    <style name="TieButtonStyle" parent="Widget.AppCompat.Button">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:backgroundTint">#ffaaae</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:padding">8dp</item>
+        <item name="android:layout_marginBottom">8dp</item>
+    </style>
+
+<!--Reset button-->
+    <style name="ResetButtonStyle" parent="Widget.AppCompat.Button.Borderless.Colored">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#fd5c63</item>
     </style>
 </resources>

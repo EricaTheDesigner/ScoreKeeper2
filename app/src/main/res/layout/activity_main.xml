@@ -6,98 +6,73 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     tools:context=".MainActivity"
-    android:background="#efefef">
+    android:background="@color/background_color">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="0dp"
+        android:layout_height="@dimen/FirstLinearLayoutHeight"
         android:layout_weight="1"
         android:orientation="vertical"
-        android:layout_margin="8dp">
+        android:layout_margin="@dimen/FirstLinearLayoutMargin">
 
 
         <ImageView
             android:layout_width="match_parent"
-            android:layout_height="150dp"
-            android:layout_marginBottom="16dp"
+            android:layout_height="@dimen/img_height"
+            android:layout_marginBottom="@dimen/img_marginBottom"
             android:src="@drawable/rps"/>
 
         <TextView
             style="@style/TitleStyle"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="rock. paper. scissors"
-            app:fontFamily="@font/just_another_hand" />
+            android:text="@string/title"/>
 
         <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
+            style="@style/matchW_wrapH"
             android:orientation="horizontal">
 
 <!--column one-->
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/wrap_content"
                 android:layout_weight="1"
-                android:layout_margin="8dp"
                 android:orientation="vertical">
 
                 <TextView
                     style="@style/PlayerStyle"
                     android:id="@+id/PlayerA"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Player A" />
 
                 <TextView
                     style="@style/ScoreStyle"
                     android:id="@+id/score_a"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:fontFamily="@font/just_another_hand"
-                    android:text="0"/>
+                    android:text="@string/startingScore"/>
 
                 <Button
-                    style="@style/Widget.AppCompat.Button.Colored"
+                    style="@style/addOneStyle"
                     android:id="@+id/PlayerA_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:onClick="addAPointA"
-                    android:text="+1"
-                    android:textSize="24sp" />
+                    android:text="@string/AddAPointButton"/>
 
             </LinearLayout>
 <!--column two-->
             <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
+                style="@style/wrap_content"
                 android:layout_weight="1"
-                android:layout_margin="8dp"
                 android:orientation="vertical">
 
                 <TextView
                     style="@style/PlayerStyle"
                     android:id="@+id/PlayerB"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
                     android:text="Player B"/>
 
                 <TextView
                     style="@style/ScoreStyle"
                     android:id="@+id/score_b"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    app:fontFamily="@font/just_another_hand"
-                    android:text="0" />
+                    android:text="@string/startingScore" />
 
                 <Button
-                    style="@style/Widget.AppCompat.Button.Colored"
+                    style="@style/addOneStyle"
                     android:id="@+id/PlayerB_button"
-                    android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:padding="8dp"
-                    android:text="+1"
-                    android:textSize="24sp"
+                    android:text="@string/AddAPointButton"
                     android:onClick="addAPointB"/>
 
 
@@ -107,20 +82,22 @@
         </LinearLayout>
 
         <LinearLayout
-            android:layout_width="wrap_content"
-            android:layout_height="0dp"
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/LastLinearLayoutHeight"
             android:layout_weight="1"
-            android:layout_gravity="center|bottom">
+            android:layout_gravity="center|bottom"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/Tie_button"
+                style="@style/TieButtonStyle"
+                android:onClick="tie"
+                android:text="tie round" />
 
         <Button
-            style="@style/Widget.AppCompat.Button.Borderless.Colored"
+            style="@style/ResetButtonStyle"
             android:id="@+id/Reset_button"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_gravity="bottom"
-            android:text="reset game"
-            android:textSize="30sp"
-            android:gravity="center|bottom"
+            android:text="@string/reset_game"
             android:onClick="reset"/>
 
         </LinearLayout>

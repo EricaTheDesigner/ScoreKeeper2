@@ -77,6 +77,17 @@ public class MainActivity extends AppCompatActivity {
         displayforPlayerB(finalScorePlayerB);
     }
 
+    //This method adds points when there is a tie and both players choose the same thing
+
+    public void tie(View view){
+        finalScorePlayerA = finalScorePlayerA + 1;
+        finalScorePlayerB = finalScorePlayerB + 1;
+        displayforPlayerA(finalScorePlayerA);
+        displayforPlayerB(finalScorePlayerB);
+
+    }
+
+
     //resets scores to 0
     public void reset(View view){
         finalScorePlayerA = 0;
